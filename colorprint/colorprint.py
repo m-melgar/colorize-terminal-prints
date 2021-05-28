@@ -1,8 +1,8 @@
 """
 Author: @imcosmicowl
-
+https://github.com/imcosmicowl
 """
-    
+
 
 def print_colored(string: str, color_id):
     """
