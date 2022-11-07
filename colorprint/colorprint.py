@@ -1,24 +1,29 @@
 """
-Author: @imcosmicowl
-https://github.com/imcosmicowl
+Author: @m-melgar
+https://github.com/m-melgar
 """
 
 
-def print_colored(string: str, color_id):
+def print_colored(string: str, color_id: str) -> None:
     """
-    prints a string colorized
-    :param string: string to colorize
-    :param color_id: reference https://stackoverflow.com/questions/287871/how-to-print-colored-text-to-the-terminal
-    :return:
+    Prints string colorized as color_id.
+    :param string: str
+            String to be colorized.
+    :param color_id: str
+            Linux terminal color ID, reference https://stackoverflow.com/questions/287871/how-to-print-colored-text-to-the-terminal.
+    :return: None
     """
     print(color_id + string + '\x1b[0m')
 
 
-def colorize_string(string: str, color_id):
+def colorize_string(string: str, color_id) -> str:
     """
-    colorizes a string to use with "print" function
-    :param string: string to colorize
-    :param color_id: color_id reference: https://stackoverflow.com/questions/287871/how-to-print-colored-text-to-the-terminal
-    :return: concatenated string with colorize format
+    Colorizes a string to be used with "print" function.
+    :param string: str
+            String to be colorized.
+    :param color_id: str
+            Linux terminal color ID, reference https://stackoverflow.com/questions/287871/how-to-print-colored-text-to-the-terminal.
+    :return: str
+            Formatted string.
     """
     return color_id + string + '\x1b[0m'
